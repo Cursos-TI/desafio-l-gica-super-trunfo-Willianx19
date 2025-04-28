@@ -77,8 +77,8 @@ float superpoder2;
 //printf e scanf da Carta 02, entrada dados
 printf("Carta 02: \n");
 
-printf("Digite o estado da carta 02: \n");
-scanf("%c",&estado2);
+printf("Digite o Estado da carta 01: \n");
+scanf("%s",&estado2);
 
 printf("Digite o codígo da carta 02: \n");
 scanf("%s",&codigo_carta2);
@@ -130,7 +130,7 @@ if (area > area2)
 {
 printf("Área: Carta 01 (%s) venceu \n",nome_cidade);
 }else{
-printf("Área: Carta 02 ganhou (%S) venceu \n",nome_cidade2);
+printf("Área: Carta 02 ganhou (%s) venceu \n",nome_cidade2);
 }
 
 if (pib > pib2)
@@ -149,7 +149,7 @@ printf("Densidade Populacional: Carta 02 (%s) venceu \n",nome_cidade2);
 
 if (superpoder > superpoder2)
 {
-printf("Super poder: Carta 01 (%S) venceu \n",nome_cidade);
+printf("Super poder: Carta 01 (%s) venceu \n",nome_cidade);
 }else{
 printf("Super poder: Carta 02 (%s) venceu \n",nome_cidade2);
 }
