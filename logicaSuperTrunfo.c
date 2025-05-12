@@ -16,7 +16,8 @@ int pontos_turisticos;
 float densidade_popu;
 float pib_perca;
 float superpoder;
-int comparacao;
+int comparacao,comparacao2;
+int resultado1,resultado2;
 
 // printf e scanf da Carta 01, entrada dados
 printf("Carta 01: \n");
@@ -78,7 +79,7 @@ float superpoder2;
 //printf e scanf da Carta 02, entrada dados
 printf("Carta 02: \n");
 
-printf("Digite o Estado da carta 01: \n");
+printf("Digite o Estado da carta 02: \n");
 scanf("%s",&estado2);
 
 printf("Digite o codígo da carta 02: \n");
@@ -119,7 +120,6 @@ printf("O Pib per capita é:%f \n",pib_perca2);
 printf("o Super poder é : %f \n",superpoder2);
 
 // Switch para selecionar qual tributo comparar
-
 printf("*** Comparação entre os atributos *** \n");
 printf("Selecione o tributo que deseja comparar \n");
 printf("1.População \n");
@@ -132,62 +132,73 @@ scanf("%d",&comparacao);
 switch (comparacao)
 {
 case 1:
-if (populacao > populacao2)
+resultado1 = populacao > populacao2 ? 1 : 0;
+
+if (resultado1 == 1)
 {
 printf("População: Carta 01 (%s) venceu \n",nome_cidade);
-} else if (populacao2 > populacao)
+} else if (resultado1 == 0)
 {
 printf("População: Carta 02 (%s) venceu \n",nome_cidade2);
 } else {
-printf("*** empatou *** \n");
+printf("*** Empatou! ****");
 }
 break;
 
 case 2:
-if (area > area2)
+resultado1 = area > area2 ? 1 : 0;
+
+if (resultado1 = 1)
 {
-printf("A carta 01 (%s) venceu \n",area);
-} else if (area2 > area)
+printf("A carta 01 (%s) venceu \n",nome_cidade);
+} else if (resultado1 == 0)
 {
-printf("A Carta 02 (%s) venceu \n");
-} else {
-printf("*** empatou *** \n");
+printf("A carta 02 (%s) venceu \n",nome_cidade2);
+} else{
+printf("*** empatou ***");
 }
 break;
 
 case 3:
-if (pib > pib2)
+
+resultado1 = pib > pib2 ? 1 : 0;
+
+if (resultado1 == 1)
 {
-printf("Pib: Carta 01 (%s) venceu \n",nome_cidade);
-} else if ( pib2 > pib)
+printf("Pib: Carta 01 (%s) venceu! \n",nome_cidade);
+} else if (resultado1 == 0)
 {
-printf("Pib: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("Pib: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
-printf("*** empatou *** \n");
+printf("*** Empatou! *** \n");
 }
 break;
 
 case 4:
-if (densidade_popu < densidade_popu2)
+resultado1 = densidade_popu < densidade_popu2 ? 1 : 0;
+
+if (resultado1 == 1 )
 {
 printf("Densidade Populacional: Carta 01 (%s) venceu \n",nome_cidade);
-} else if (densidade_popu2 < densidade_popu)
+} else if (resultado1 == 0)
 {
 printf("Densidade Populacional: Carta 02 (%s) venceu \n",nome_cidade2);
 } else {
-printf("*** empatou *** \n");
+printf("*** Empatou! *** \n");
 }
 break;
 
 case 5:
-if (superpoder > superpoder2)
+resultado1 = superpoder > superpoder2 ? 1 : 0;
+
+if (resultado1 == 1)
 {
 printf("Super poder: Carta 01 (%s) venceu \n",nome_cidade);
-} else if (superpoder2 > superpoder)
+} else if (resultado1 = 0)
 {
 printf("Super poder: Carta 02 (%s) venceu \n",nome_cidade2);
 } else {
-printf("*** empatou *** \n");
+printf("*** Empatou! *** \n");
 }
 break;
 
@@ -195,5 +206,21 @@ default:
 printf("Opção inválida");
     break;
 }
+
+// Switch para selecionar qual 0 2° tributo para comparar
+printf("Selecione o 2° tributo que deseja comparar \n");
+printf("1.População \n");
+printf("2.Área \n");
+printf("3.Pib \n");
+printf("4.Densidade Populacional \n");
+printf("5.Super Poder \n");
+scanf("%d",&comparacao2);
+
+if (comparacao == comparacao2)
+{
+printf("Você selecionou o mesmo atributo! ");
+} else
+
+
     return 0;
 }

@@ -50,7 +50,7 @@ No nível Mestre, o desafio se intensifica com a adição de funcionalidades ava
 
 ### 🚩 Novas Funcionalidades:
 - **Comparação de Dois Atributos:** O sistema comparará dois atributos simultaneamente para determinar a carta vencedora.
-- **Lógica Avançada:** Uso de operadores ternários e lógica aninhada para lidar com comparações complexas.
+- **Lógica Avançada:** Uso de operadores ternários e lógica iannhada para lidar com comparações complexas.
 - **Empates:** O sistema será capaz de lidar com empates, exibindo mensagens apropriadas.
 - **Exibição de Resultados:** Exibição dos resultados das comparações de forma clara e interativa.
 
