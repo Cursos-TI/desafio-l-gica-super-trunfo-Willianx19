@@ -136,10 +136,10 @@ resultado1 = populacao > populacao2 ? 1 : 0;
 
 if (resultado1 == 1)
 {
-printf("População: Carta 01 (%s) venceu \n",nome_cidade);
+printf("População: Carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado1 == 0)
 {
-printf("População: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("População: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
 printf("*** Empatou! ****");
 }
@@ -150,10 +150,10 @@ resultado1 = area > area2 ? 1 : 0;
 
 if (resultado1 = 1)
 {
-printf("A carta 01 (%s) venceu \n",nome_cidade);
+printf("A carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado1 == 0)
 {
-printf("A carta 02 (%s) venceu \n",nome_cidade2);
+printf("A carta 02 (%s) venceu! \n",nome_cidade2);
 } else{
 printf("*** empatou ***");
 }
@@ -179,10 +179,10 @@ resultado1 = densidade_popu < densidade_popu2 ? 1 : 0;
 
 if (resultado1 == 1 )
 {
-printf("Densidade Populacional: Carta 01 (%s) venceu \n",nome_cidade);
+printf("Densidade Populacional: Carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado1 == 0)
 {
-printf("Densidade Populacional: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("Densidade Populacional: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
 printf("*** Empatou! *** \n");
 }
@@ -193,17 +193,17 @@ resultado1 = superpoder > superpoder2 ? 1 : 0;
 
 if (resultado1 == 1)
 {
-printf("Super poder: Carta 01 (%s) venceu \n",nome_cidade);
+printf("Super poder: Carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado1 = 0)
 {
-printf("Super poder: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("Super poder: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
 printf("*** Empatou! *** \n");
 }
 break;
 
 default:
-printf("Opção inválida");
+printf("Opção inválida!");
     break;
 }
 
@@ -227,10 +227,10 @@ resultado2 == populacao > populacao2 ? 1 : 0;
 
 if (resultado2 == 1)
 {
-printf("População: Carta 01 (%s) venceu \n",nome_cidade);
+printf("População: Carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado2 == 0)
 {
-printf("População: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("População: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
 printf("*** empatou! *** \n");
 }
@@ -240,10 +240,10 @@ resultado2 == area > area2 ? 1 : 0;
 
 if (resultado2 == 1)
 {
-printf("Área: Carta 01 (%s) venceu \n",nome_cidade);
+printf("Área: Carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado2 == 0)
 {
-printf("Área: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("Área: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
 printf("*** Empatou! ***");
 }
@@ -253,10 +253,10 @@ resultado2 = pib > pib2 ? 1 : 0;
 
 if (resultado2 == 1)
 {
-printf("Pib: Carta 01 (%s) venceu \n",nome_cidade);
+printf("Pib: Carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado2)
 {
-printf("Pib: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("Pib: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
 printf("*** Empatou! ***\n");
 }
@@ -266,10 +266,10 @@ resultado2 = densidade_popu < densidade_popu2 ? 1 : 0;
 
 if (resultado2 == 1)
 {
-printf("Densidade populacional: Carta 01 (%s) venceu \n",nome_cidade);
+printf("Densidade populacional: Carta 01 (%s) venceu! \n",nome_cidade);
 } else if (resultado2 == 0)
 {
-printf("Densidade populacional: Carta 02 (%s) venceu \n",nome_cidade2);
+printf("Densidade populacional: Carta 02 (%s) venceu! \n",nome_cidade2);
 } else {
 printf("*** Empatou! *** \n");
 }
@@ -279,14 +279,31 @@ resultado2 = superpoder > superpoder2 ? 1 : 0;
 
 if (resultado2 = 1)
 {
-printf("Super Poderl: Carta 01 (%s) venceu \n",nome_cidade);
-} 
-
+printf("Super Poderl: Carta 01 (%s) venceu! \n",nome_cidade);
+} else if (resultado2 == 0)
+{
+printf("Super Poder:Carta 02 (%s) venceu! \n",nome_cidade2);
+} else {
+printf("*** Empatou! **** \n");
+}
     break;
 default:
-    break;
+printf("Opção inválida");
+    break;   
 }
 }
+
+if (resultado1 && resultado2)
+{
+printf("Parabéns!, Você ganhou \n");
+} else if (resultado1 != resultado2)
+{
+printf("*** Empate! **** \n");
+} else {
+printf("Infelizmente Você perdeu! \n");
+}
+
+
 
 
     return 0;
