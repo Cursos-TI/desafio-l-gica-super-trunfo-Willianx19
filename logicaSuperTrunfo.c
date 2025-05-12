@@ -219,7 +219,74 @@ scanf("%d",&comparacao2);
 if (comparacao == comparacao2)
 {
 printf("Você selecionou o mesmo atributo! ");
-} else
+} else {
+switch (comparacao2)
+{
+case 1:
+resultado2 == populacao > populacao2 ? 1 : 0;
+
+if (resultado2 == 1)
+{
+printf("População: Carta 01 (%s) venceu \n",nome_cidade);
+} else if (resultado2 == 0)
+{
+printf("População: Carta 02 (%s) venceu \n",nome_cidade2);
+} else {
+printf("*** empatou! *** \n");
+}
+    break;
+case 2:
+resultado2 == area > area2 ? 1 : 0;
+
+if (resultado2 == 1)
+{
+printf("Área: Carta 01 (%s) venceu \n",nome_cidade);
+} else if (resultado2 == 0)
+{
+printf("Área: Carta 02 (%s) venceu \n",nome_cidade2);
+} else {
+printf("*** Empatou! ***");
+}
+    break;
+case 3:
+resultado2 = pib > pib2 ? 1 : 0;
+
+if (resultado2 == 1)
+{
+printf("Pib: Carta 01 (%s) venceu \n",nome_cidade);
+} else if (resultado2)
+{
+printf("Pib: Carta 02 (%s) venceu \n",nome_cidade2);
+} else {
+printf("*** Empatou! ***\n");
+}
+    break;
+case 4:
+resultado2 = densidade_popu < densidade_popu2 ? 1 : 0;
+
+if (resultado2 == 1)
+{
+printf("Densidade populacional: Carta 01 (%s) venceu \n",nome_cidade);
+} else if (resultado2 == 0)
+{
+printf("Densidade populacional: Carta 02 (%s) venceu \n",nome_cidade2);
+} else {
+printf("*** Empatou! *** \n");
+}
+    break;
+case 5:
+resultado2 = superpoder > superpoder2 ? 1 : 0;
+
+if (resultado2 = 1)
+{
+printf("Super Poderl: Carta 01 (%s) venceu \n",nome_cidade);
+} 
+
+    break;
+default:
+    break;
+}
+}
 
 
     return 0;
